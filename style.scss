@@ -557,10 +557,6 @@ body {
     display: block;
 }
 
-.dropdown:hover .dropbtn {
-    /* background-color: #3e8e41; */
-}
-
 .menu__title {
     color: #000;
     font-family: Lato;
@@ -997,6 +993,10 @@ body {
             line-height: normal;
         }
 
+        &__input::placeholder {
+            padding-left: 17px;
+        }
+
         &__submit {
             background: #fff;
             width: 100px;
@@ -1046,6 +1046,7 @@ body {
         &__hr {
             border: 1px solid #E2E2E2;
             margin-bottom: 33px;
+            margin-top: 21px;
         }
 
         &__button {
@@ -1241,6 +1242,15 @@ body {
         max-width: 375px;
     }
 
+    .container2 {
+        justify-content: center;
+    }
+
+    .background-tint {
+        padding-top: 64px;
+        padding-bottom: 110px;
+    }
+
     .mobile__hidden {
         display: none;
     }
@@ -1282,7 +1292,6 @@ body {
     .grid__mobile {
         display: grid;
         justify-items: center;
-
     }
 
     .grid__background__image {
@@ -1299,6 +1308,78 @@ body {
 
     .fluid__footer_bottom {
         padding-top: 43px;
+    }
+
+    .buttons {
+        width: 358px;
+        margin-top: 0;
+    }
+
+    .cart {
+
+        justify-content: center;
+
+        &__img_small {
+            width: 143px;
+        }
+
+        &__item {
+            width: 358px;
+
+            &__dsc {
+                gap: 0;
+                padding-left: 17px;
+                padding-right: 12px;
+
+                &__heading {
+                    font-size: 16px;
+                    width: 143px;
+                }
+
+                &__param {
+                    font-size: 14px;
+                }
+
+                &__block1 {
+                    gap: 26px;
+                }
+
+                &__input {
+                    height: 15px;
+                    width: 24px;
+                    font-size: 10px;
+                }
+            }
+
+            &__cross {
+                padding-top: 0;
+            }
+        }
+
+        &__cross_small {
+            width: 9px;
+        }
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__buttons {
+            &__link {
+                font-size: 12px;
+                padding: 9px 10px;
+            }
+        }
+
+        &__2block {
+
+            &__input {
+                padding: 0;
+            }
+
+        }
     }
 }
 
